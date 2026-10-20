@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Harbor Demo EMR</title><link rel="stylesheet" href="/style.css"></head>
+<body><aside><div class="logo">H<span>Harbor</span></div><p>DEMO EMR</p><nav>◉ &nbsp; Patient directory</nav><footer>Synthetic data only<br>Interview sandbox</footer></aside>
+<main><header><div><small>SUPPORT WORKSPACE</small><h1>Patient directory</h1></div><span class="badge">Demo environment</span></header>
+<p class="muted">Reference clock: <strong>October 20, 2026 · 9:00 AM</strong> · America/Los_Angeles</p>
+<details><summary>Interview controls</summary><div class="controls"><label>Scenario<select id="scenario"><option value="normal">Normal</option><option value="rerender">Rows rerender on selection</option><option value="slot_taken">Slot becomes unavailable on save</option><option value="lost_confirmation">Save succeeds, confirmation lost</option><option value="save_failed">Save fails without change</option><option value="already_done">Already rescheduled</option><option value="unverifiable">Save outcome cannot be verified</option></select></label><button id="reset">Reset demo</button></div><p>Changing the scenario resets all records. Reloading preserves changes in this browser.</p></details>
+<section><h2>Find a patient</h2><form id="search"><label>Patient name or ID<input id="query" placeholder="e.g. PT-1001 or Alex Morgan" required></label><button>Search</button></form><p id="search-status" role="status"></p><div id="results"></div></section>
+<section id="chart" hidden></section>
+</main><script type="module" src="/app.js"></script></body></html>

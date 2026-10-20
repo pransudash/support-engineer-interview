@@ -1,0 +1,22 @@
+{
+  "name": "support-engineer-interview",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "playwright test tests/demo.spec.ts",
+    "test:challenge": "playwright test tests/challenge.spec.ts",
+    "test:headed": "playwright test tests/demo.spec.ts --headed",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.18.0",
+    "typescript": "5.9.3"
+  }
+}
